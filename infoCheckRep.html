@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>十分到家报修系统</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+<div class="telephone_ensure">
+    <nav id="nav">
+        <a href="javascript:history.go(-1)">
+            <div class="back_btn">
+                <img src="images/back.png" alt="">
+            </div>
+        </a>
+        <div class="nav_title">
+            <span>维修单填写</span>
+        </div>
+    </nav>
+    <section id="ensureBox" class="ensure_box">
+        <ul>
+            <li class="status_box">
+                <div class="status_bar">
+                    <div class="status_circle_1"></div>
+                    <div class="status_line"></div>
+                    <div class="status_circle_1"></div>
+                    <div class="status_line"></div>
+                    <div class="status_circle_2">
+                        <img src="images/running.png" alt="">
+                    </div>
+                </div>
+                <div class="status_describe">
+                    <p class="text_ensure">产品信息</p>
+                    <p class="text_ensure">地址时间</p>
+                    <p>最终确认</p>
+                </div>
+            </li>
+            <li class="telephone_item">
+                <div class="tel_item">
+                    <mark>*</mark>
+                    <span>联系电话</span>
+                </div>
+                <div class="tel_line"></div>
+                <div class="tel_input">
+                    <input id="userTelephone" type="text" placeholder="请输入您的手机号码" autofocus="autofocus" required="required">
+                </div>
+            </li>
+            <li class="identyfing_code">
+                <div class="tel_item">
+                    <mark>&nbsp;&nbsp;&nbsp;*</mark>
+                    <span>验证码</span>
+                </div>
+                <div class="tel_line"></div>
+                <div class="tel_input">
+                    <input id="identifyCode" type="text" placeholder="请输入验证码"  autofocus="autofocus" required="required"/>
+                </div>
+                <input type="button" id="getIdentyfyCode" class="get_identyfingCode" value="获取验证码" />
+            </li>
+        </ul>
+        <input type="submit" id="submitBtn3" class="submit_btn" value="提交">
+    </section>
+    <div id="ensureComplete" class="ensure_complete">
+        <div class="ensure_content">
+            <div class="ensure_icon">
+                <img src="images/success.png" alt="">
+            </div>
+            <div class="ensure_notice">
+                <P>恭喜，单据已提交</P>
+                <P>下载国美智能，随时查看单据进度</P>
+            </div>
+            <div class="ensure_download">
+                <p>确定</p>
+                <p>确定下载</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/common.js"></script>
+<script src="js/infoCheckRep.js"></script>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>十分到家报修系统</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+<div class="install_box">
+    <nav id="nav">
+        <a href="javascript:history.go(-1)">
+            <div class="back_btn">
+                <img src="images/back.png" alt="">
+            </div>
+        </a>
+        <div class="nav_title">
+            <span>维修单填写</span>
+        </div>
+    </nav>
+    <section id="ensureBox" class="install_content">
+        <ul class="install_11">
+            <li class="status_box">
+                <div class="status_bar">
+                    <div class="status_circle_2">
+                        <img src="images/running.png" alt="">
+                    </div>
+                    <div class="status_line_3"></div>
+                    <div class="status_circle_3"></div>
+                    <div class="status_line_3"></div>
+                    <div class="status_circle_3"></div>
+                </div>
+                <div class="status_describe">
+                    <p class="text_ensure">产品信息</p>
+                    <p>地址时间</p>
+                    <p>最终确认</p>
+                </div>
+            </li>
+            <li id="productList1" class="product_list">
+                <div class="product_info">
+                    <mark>*</mark>
+                    <span id="bigProductSelect">产品大类</span>
+                </div>
+                <div class="product_name">
+                    <div id="productBtype" class="product_choice" data-id=""></div>
+                    <div class="choice_icon">
+                        <img src="images/arrow_next.png" alt="">
+                    </div>
+                </div>
+            </li>
+            <li id="productList2" class="product_list">
+                <div class="product_info">
+                    <mark>*</mark>
+                    <span id="smallProductSelect">产品小类</span>
+                </div>
+                <div class="product_name">
+                    <div id="productStype" class="product_choice" data-id=""></div>
+                    <div class="choice_icon">
+                        <img src="images/arrow_next.png" alt="">
+                    </div>
+                </div>
+            </li>
+            <li id="productList3" class="product_list">
+                <div class="product_info">
+                    <mark>*</mark>
+                    <span id="productNumSelect">产品型号</span>
+                </div>
+                <div class="product_name">
+                    <div id="productNumType" class="product_choice"></div>
+                    <div class="choice_icon">
+                        <img src="images/arrow_next.png" alt="">
+                    </div>
+                </div>
+            </li>
+            <li class="product_list">
+                <div class="product_info">
+                    <mark>&nbsp;</mark>
+                    <span>备注</span>
+                </div>
+            </li>
+        </ul>
+        <div class="textarea_input">
+            <textarea name="quesition" id="questionInput" cols="50" rows="10" placeholder="请输入您的问题" required="required"></textarea>
+            <div class="num_box">
+                <span id="numInput">0</span> / <span id="totalInput">100</span>
+            </div>
+        </div>
+        <input type="submit" id="submitBtn1" class="install_next_1" value="下一步" />
+    </section>
+    <!--安装产品大类列表-->
+    <div id="productBlist" class="product_big"></div>
+    <div class="product_box" id="bigProductBox">
+        <ul id="bigProductList">
+            <!--后台获取的产品大类数据插入此处-->
+        </ul>
+    </div>
+    <!--安装产品小类列表-->
+    <div id="productSlist" class="product_big"></div>
+    <div class="product_box" id="smallProductBox">
+        <ul id="smallProductList">
+            <!--后台获取的产品小类数据插入此处-->
+        </ul>
+    </div>
+    <!--安装产品型号列表-->
+    <div id="productNumlist" class="product_big"></div>
+    <div class="product_box" id="productNumBox">
+        <ul id="numProductList">
+            <!--后台获取的产品型号数据插入此处-->
+        </ul>
+    </div>
+</div>
+</body>
+<script src="js/common.js"></script>
+<script src="js/productInfoRep.js"></script>
+</html>

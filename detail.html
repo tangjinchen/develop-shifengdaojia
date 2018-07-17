@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>十分到家报装和报修H5页面</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+<div class="order_detail">
+    <nav id="nav">
+        <a href="javascript:history.go(-1)">
+            <div class="back_btn">
+                <img src="images/back.png" alt="">
+            </div>
+        </a>
+        <div class="nav_title">
+            <span>单据详情</span>
+        </div>
+    </nav>
+    <section id="orderDetail" class="order_detail">
+        <ul>
+            <li>
+                <div>订单状态</div>
+                <p>安装—派工中</p>
+            </li>
+            <li>
+                <div>订单号</div>
+                <p>XXXXXXXXXXXXXXXXXX</p>
+            </li>
+            <li>
+                <div>承接商家</div>
+                <p>十分商家（000000000000）</p>
+            </li>
+            <li>
+                <div>派工信息</div>
+                <p class="detail_info">
+                    <span>网点：深圳市宝安区龙华家电维修部</span>
+                    <span>安装师傅: 王小二（13800000038）</span>
+
+                </p>
+            </li>
+            <li>
+                <div>预约时间</div>
+                <p>
+                    <span>2018/06/30</span>
+                    <span>14:00-16:00</span>
+                </p>
+            </li>
+            <li>
+                <div>产品大类</div>
+                <p>生活电器</p>
+            </li>
+            <li>
+                <div>产品小类</div>
+                <p>电饭煲</p>
+            </li>
+            <li>
+                <div>产品型号</div>
+                <p>AAAABBBBCCCC</p>
+            </li>
+            <li>
+                <div>备注</div>
+                <p>
+                    <input type="text" placeholder="这里是用户填写的备注内容">
+                </p>
+            </li>
+        </ul>
+    </section>
+</div>
+</body>
+<script type="text/javascript">
+    // 根据设备宽度动态计算出页面中html元素默认值
+    function resizeFontSize() {
+        let deviceWidth = document.documentElement.clientWidth || document.body.clientWidth;
+        console.log("deviceWidth==="+deviceWidth);
+        if(deviceWidth>375){
+            deviceWidth = 375
+        }
+        let resizeFontSize = deviceWidth / 37.5 + "px";
+        console.log("resizeFontSize==="+resizeFontSize);
+        let deviceHtml = document.getElementsByTagName("html")[0];
+        deviceHtml.style.fontSize = resizeFontSize;
+    }
+    // 页面第一次加载就执行一次
+    resizeFontSize();
+    // 当打开页面的设备宽度变化时就执行resizeFontSize函数
+    window.onresize = function () {
+        resizeFontSize();
+    }
+</script>
+</html>
